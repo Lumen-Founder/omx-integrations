@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "generated_at": "2026-11-05T10:54:01Z",
+    "platform": "Windows 10, Python 3.12.9",
+    "omx_mcp_command": ".\\.venv\\Scripts\\omx-hyperliquid.exe",
+    "omx_mcp_args": [
+      "--inspect"
+    ],
+    "omx_hyperliquid_version_server_env": "0.1.3",
+    "mcp_version_server_env": "2.3.0",
+    "llm_called": false
+  },
+  "summary": {
+    "openai-agents": "PASS",
+    "langchain": "PASS",
+    "claude-agent-sdk": "PASS",
+    "pydantic-ai": "PASS",
+    "crewai": "PASS"
+  },
+  "results": [
+    {
+      "framework": "openai-agents",
+      "python": "3.12.9",
+      "executable": ".\\.venv\\Scripts\\python.exe",
+      "versions": {
+        "openai-agents": "0.24.0",
+        "omx-hyperliquid": "0.1.3",
+        "mcp": "2.3.0"
+      },
+      "server": {
+        "command": ".\\.venv\\Scripts\\omx-hyperliquid.exe",
+        "args": [
+          "--inspect"
+        ],
+        "mode": "inspect"
+      },
+      "tools": [
+        "account_summary",
+        "approval_status",
+        "cancel_order",
+        "get_quote",
+        "kill_switch",
+        "order_status",
+        "policy_limits",
+        "preview_order",
+        "submit_order"
+      ],
+      "probe": {
+        "tool": "get_quote",
+        "parsed": true,
+        "ok": false,
+        "demo": null,
+        "block_reasons": [
+          "NOT_CONFIGURED"
+        ],
+        "message": "This is OMX in inspect-only mode (no config, no daemon, no key): it lists its tools and refuses every call. To trade, run `omx init`, `omx daemon`, then `omx-mc",
+        "keys": [
+          "block_reasons",
+          "message",
+          "ok"
+        ]
+      },
+      "connection": "agents.mcp.MCPServerStdio(params={command, args})",
+      "tool_count": 9,
+      "tools_missing": [],
+      "probe_ok": true,
+      "status": "PASS",
+      "elapsed_s": 2.14,
+      "exit_code": 0,
+      "interpreter": ".\\.venv\\Scripts\\python.exe"
+    },
+    {
+      "framework": "langchain",
+      "python": "3.12.9",
+      "executable": ".\\.venv\\Scripts\\python.exe",
+      "versions": {
+        "langchain": "1.4.9",
+        "langchain-core": "1.7.6",
+        "langgraph": "1.2.20",
+        "fastmcp": "4.1.6",
+        "omx-hyperliquid": "0.1.3",
+        "mcp": "2.3.0"
+      },
+      "server": {
+        "command": ".\\.venv\\Scripts\\omx-hyperliquid.exe",
+        "args": [
+          "--inspect"
+        ],
+        "mode": "inspect"
+      },
+      "tools": [
+        "account_summary",
+        "approval_status",
+        "cancel_order",
+        "get_quote",
+        "kill_switch",
+        "order_status",
+        "policy_limits",
+        "preview_order",
+        "submit_order"
+      ],
+      "probe": {
+        "tool": "get_quote",
+        "parsed": true,
+        "ok": false,
+        "demo": null,
+        "block_reasons": [
+          "NOT_CONFIGURED"
+        ],
+        "message": "This is OMX in inspect-only mode (no config, no daemon, no key): it lists its tools and refuses every call. To trade, run `omx init`, `omx daemon`, then `omx-mc",
+        "keys": [
+          "block_reasons",
+          "message",
+          "ok"
+        ]
+      },
+      "connection": "langchain.mcp.MCPAdapter({'mcpServers': {'omx': {command, args}}})",
+      "tool_count": 9,
+      "tools_missing": [],
+      "probe_ok": true,
+      "status": "PASS",
+      "elapsed_s": 1.99,
+      "exit_code": 0,
+      "interpreter": ".\\.venv\\Scripts\\python.exe"
+    },
+    {
+      "framework": "claude-agent-sdk",
+      "python": "3.12.9",
+      "executable": ".\\.venv\\Scripts\\python.exe",
+      "versions": {
+        "claude-agent-sdk": "0.2.178",
+        "omx-hyperliquid": "0.1.3",
+        "mcp": "2.3.0"
+      },
+      "server": {
+        "command": ".\\.venv\\Scripts\\omx-hyperliquid.exe",
+        "args": [
+          "--inspect"
+        ],
+        "mode": "inspect"
+      },
+      "tools": [
+        "account_summary",
+        "approval_status",
+        "cancel_order",
+        "get_quote",
+        "kill_switch",
+        "order_status",
+        "policy_limits",
+        "preview_order",
+        "submit_order"
+      ],
+      "probe": {
+        "status": "not_run",
+        "reason": "the SDK calls MCP tools only inside a model turn"
+      },
+      "mcp_status": "connected",
+      "mcp_status_history": [
+        "pending",
+        "connected"
+      ],
+      "server_info": {
+        "name": "omx",
+        "version": ""
+      },
+      "mcp_error": null,
+      "connection": "ClaudeAgentOptions(mcp_servers={'omx': {type: stdio, command, args}}) + get_mcp_status()",
+      "tool_count": 9,
+      "tools_missing": [],
+      "probe_ok": null,
+      "status": "PASS",
+      "elapsed_s": 3.12,
+      "exit_code": 0,
+      "interpreter": ".\\.venv\\Scripts\\python.exe"
+    },
+    {
+      "framework": "pydantic-ai",
+      "python": "3.12.9",
+      "executable": ".\\.venv\\Scripts\\python.exe",
+      "versions": {
+        "pydantic-ai-slim": "2.66.0",
+        "fastmcp-slim": "4.1.6",
+        "fastmcp": "4.1.6",
+        "omx-hyperliquid": "0.1.3",
+        "mcp": "2.3.0"
+      },
+      "server": {
+        "command": ".\\.venv\\Scripts\\omx-hyperliquid.exe",
+        "args": [
+          "--inspect"
+        ],
+        "mode": "inspect"
+      },
+      "tools": [
+        "account_summary",
+        "approval_status",
+        "cancel_order",
+        "get_quote",
+        "kill_switch",
+        "order_status",
+        "policy_limits",
+        "preview_order",
+        "submit_order"
+      ],
+      "probe": {
+        "tool": "get_quote",
+        "parsed": true,
+        "ok": false,
+        "demo": null,
+        "block_reasons": [
+          "NOT_CONFIGURED"
+        ],
+        "message": "This is OMX in inspect-only mode (no config, no daemon, no key): it lists its tools and refuses every call. To trade, run `omx init`, `omx daemon`, then `omx-mc",
+        "keys": [
+          "block_reasons",
+          "message",
+          "ok"
+        ]
+      },
+      "connection": "pydantic_ai.mcp.MCPToolset(fastmcp StdioTransport(command, args))",
+      "tool_count": 9,
+      "tools_missing": [],
+      "probe_ok": true,
+      "status": "PASS",
+      "elapsed_s": 2.24,
+      "exit_code": 0,
+      "interpreter": ".\\.venv\\Scripts\\python.exe"
+    },
+    {
+      "framework": "crewai",
+      "python": "3.12.9",
+      "executable": ".\\.venv-crewai\\Scripts\\python.exe",
+      "versions": {
+        "crewai": "1.15.35",
+        "crewai-tools": "1.15.35",
+        "mcpadapt": "0.1.20",
+        "omx-hyperliquid": null,
+        "mcp": "1.30.0"
+      },
+      "server": {
+        "command": ".\\.venv\\Scripts\\omx-hyperliquid.exe",
+        "args": [
+          "--inspect"
+        ],
+        "mode": "inspect"
+      },
+      "tools": [
+        "account_summary",
+        "approval_status",
+        "cancel_order",
+        "get_quote",
+        "kill_switch",
+        "order_status",
+        "policy_limits",
+        "preview_order",
+        "submit_order"
+      ],
+      "probe": {
+        "tool": "get_quote",
+        "parsed": true,
+        "ok": false,
+        "demo": null,
+        "block_reasons": [
+          "NOT_CONFIGURED"
+        ],
+        "message": "This is OMX in inspect-only mode (no config, no daemon, no key): it lists its tools and refuses every call. To trade, run `omx init`, `omx daemon`, then `omx-mc",
+        "keys": [
+          "block_reasons",
+          "message",
+          "ok"
+        ]
+      },
+      "connection": "crewai_tools.MCPServerAdapter(mcp.StdioServerParameters(command, args))",
+      "tool_count": 9,
+      "tools_missing": [],
+      "probe_ok": true,
+      "status": "PASS",
+      "elapsed_s": 2.0,
+      "exit_code": 0,
+      "interpreter": ".\\.venv-crewai\\Scripts\\python.exe"
+    }
+  ]
+}

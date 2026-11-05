@@ -1,0 +1,6 @@
+# CrewAI client environment (CrewAI pins mcp<2; the OMX server runs from the main environment).
+# Versions verified by verify_all.py on 2026-11-05.
+crewai==1.15.35
+crewai-tools[mcp]==1.15.35
+mcp==1.30.0
+mcpadapt==0.1.20

@@ -1,0 +1,10 @@
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+out/claude_cwd/
+# never commit keys or OMX state
+*.key
+secrets/
+omx.toml
+state/
