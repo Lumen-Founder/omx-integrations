@@ -7,7 +7,7 @@ verify/verify_pydantic_ai.py uses the same `omx_toolset()` and calls `list_tools
 `direct_call_tool()` without a model.
 
 Install (versions this repo verified):
-    pip install omx-hyperliquid==0.1.3 "pydantic-ai-slim[mcp,openai]==2.66.0"
+    pip install omx-hyperliquid==0.1.7 "pydantic-ai-slim[mcp,openai]==2.66.0"
 Run (needs a model provider key; prompts go to the model):
     set PYDANTIC_AI_MODEL=openai:<model name>    (any "provider:model" string PydanticAI accepts)
     python examples/pydantic_ai_agent.py

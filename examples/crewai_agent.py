@@ -10,7 +10,7 @@ server in one environment and CrewAI in another; point OMX_MCP_COMMAND at the se
 (MCP stdio talks over a pipe, so the two never import each other).
 
 Install (versions this repo verified):
-    python -m venv .venv          && .venv\\Scripts\\pip install omx-hyperliquid==0.1.3
+    python -m venv .venv          && .venv\\Scripts\\pip install omx-hyperliquid==0.1.7
     python -m venv .venv-crewai   && .venv-crewai\\Scripts\\pip install crewai==1.15.35 "crewai-tools[mcp]==1.15.35"
 Run (needs a model key, e.g. OPENAI_API_KEY; prompts go to the model):
     set OMX_MCP_COMMAND=.venv\\Scripts\\omx-hyperliquid.exe

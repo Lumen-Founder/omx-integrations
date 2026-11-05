@@ -24,7 +24,7 @@ from pathlib import Path
 
 DEFAULT_ARGS = "--demo"
 
-# The 9 tools OMX 0.1.3 exposes over MCP. There is no tool to unkill, approve, or change limits, fees or keys.
+# The 9 tools OMX 0.1.7 exposes over MCP. There is no tool to unkill, approve, or change limits, fees or keys.
 EXPECTED_TOOLS = (
     "account_summary", "approval_status", "cancel_order", "get_quote", "kill_switch",
     "order_status", "policy_limits", "preview_order", "submit_order",
@@ -57,7 +57,7 @@ def server_command() -> str:
     found = shutil.which("omx-hyperliquid")
     if found:
         return found
-    raise RuntimeError("omx-hyperliquid not found: `pip install omx-hyperliquid==0.1.3` or set OMX_MCP_COMMAND")
+    raise RuntimeError("omx-hyperliquid not found: `pip install omx-hyperliquid==0.1.7` or set OMX_MCP_COMMAND")
 
 
 def server_args() -> list[str]:

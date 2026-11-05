@@ -5,7 +5,7 @@ What it does: starts the OMX MCP server as a subprocess with `agents.mcp.MCPServ
 small order. verify/verify_openai_agents.py uses the same `omx_server()` without calling a model.
 
 Install (versions this repo verified):
-    pip install omx-hyperliquid==0.1.3 openai-agents==0.24.0
+    pip install omx-hyperliquid==0.1.7 openai-agents==0.24.0
 Run (needs your own OPENAI_API_KEY; prompts go to the model):
     python examples/openai_agents_agent.py
 

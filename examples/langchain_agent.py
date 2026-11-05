@@ -7,7 +7,7 @@ LangGraph graph) that reads the limits, quotes ETH and previews (not submits) a 
 verify/verify_langchain.py uses the same `omx_adapter()` without calling a model.
 
 Install (versions this repo verified):
-    pip install omx-hyperliquid==0.1.3 "langchain[mcp]==1.4.9" langchain-openai
+    pip install omx-hyperliquid==0.1.7 "langchain[mcp]==1.4.9" langchain-openai
 Run (needs a model provider package and key; prompts go to the model):
     set LANGCHAIN_MODEL=openai:<model name>      (any "provider:model" string create_agent accepts)
     python examples/langchain_agent.py

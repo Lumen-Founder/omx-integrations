@@ -1,6 +1,6 @@
 # Main environment: the OMX server and the four clients compatible with mcp 2.x.
 # Versions verified by verify_all.py on 2026-11-05.
-omx-hyperliquid==0.1.3
+omx-hyperliquid==0.1.7
 mcp==2.3.0
 openai-agents==0.24.0
 claude-agent-sdk==0.2.178

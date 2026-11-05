@@ -11,7 +11,7 @@ list with `ClaudeSDKClient.get_mcp_status()` without sending a prompt.
 as OMX goes through the Agent SDK.)
 
 Install (versions this repo verified):
-    pip install omx-hyperliquid==0.1.3 claude-agent-sdk==0.2.178
+    pip install omx-hyperliquid==0.1.7 claude-agent-sdk==0.2.178
 Run (needs your own Anthropic credentials, e.g. ANTHROPIC_API_KEY; prompts go to the model):
     python examples/claude_agent_sdk_agent.py
 
